@@ -1,3 +1,1 @@
-# Balansirane govorq
-woiejfsdf
-foiwejf
+# zashtotaka

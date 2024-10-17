@@ -12,26 +12,26 @@ body {
 
 .lander {
     background-color: #e9e9e2;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
 .hed1 {
     background-color: #e9e9e2;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
 .hed2 {
     background-color: #80abc5;
-    width: 100vw;
+    width: 100%;
     height: auto; /* Use auto to allow it to grow with content */
     min-height: 100vh; /* Set minimum height to ensure it's tall enough */
 }
 
 .hed3 {
     background-color: #e9e9e2;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -50,7 +50,7 @@ body {
 header {
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 11vh;
     background: transparent;
     backdrop-filter: blur(10px);
@@ -347,50 +347,10 @@ margin-top: 12vh;
         min-height: 120vh; /* Ensure this section is tall enough */
         padding-bottom: 20vh; /* Additional space to push content down */
     }
-
-    
 }
 
 
 
-
-
-
-
-@supports (-webkit-touch-callout: none) {
-    body {
-        -webkit-font-smoothing: antialiased; /* For Safari */
-        -moz-osx-font-smoothing: grayscale;  /* For macOS */
-        text-rendering: optimizeLegibility; /* Ensures better font rendering on Chrome and Safari */
-    }
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    header {
-        display: -webkit-box; /* Safari support */
-        display: -ms-flexbox; /* IE support */
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    
-    .butns {
-        display: -webkit-box; /* Safari support */
-        display: -ms-flexbox; /* IE support */
-        display: flex;
-        justify-content: center;
-        gap: 2vw;
-    }
-    .lander {
-        height: auto; /* Use auto height to avoid viewport discrepancies */
-        min-height: 100vh; /* Use min-height to ensure it's tall enough */
-    }
-    img {
-        max-width: 100%; /* Make sure images scale down on smaller screens */
-        height: auto; /* Maintain aspect ratio */
-        display: block; /* Remove inline gaps */
-    }
-                    
+.butns a::after {
+    transition: width 0.5s ease;
 }
