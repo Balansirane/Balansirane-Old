@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.lander {
+    background-color: #e9e9e2;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hed1 {
+    background-color: #e9e9e2;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hed2 {
+    background-color: #80abc5;
+    width: 100vw;
+    height: auto; /* Use auto to allow it to grow with content */
+    min-height: 100vh; /* Set minimum height to ensure it's tall enough */
+}
+
+.hed3 {
+    background-color: #e9e9e2;
+    width: 100vw;
+    height: 100vh;
+}
+
+#title {
+    position: absolute;
+    margin-left: 4vw;
+    margin-top: 3vh;
+    font-size: 5vh;
+    font-family: "Poiret One", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #1f1f1f;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 11vh;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.butns {
+    float: right;
+    margin-right: 4vw;
+    margin-top: 5vh;
+    display: flex;
+    gap: 2.4vw;
+}
+
+.butns a {
+    position: relative;
+    text-decoration: none;
+    font-family: "Poiret One", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #1f1f1f;
+    font-size: 2.5vh;
+}
+
+.butns a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.15vh;
+    bottom: -5px;
+    left: 0;
+    background-color: #1f1f1f;
+    transition: width 0.3s ease;
+}
+
+.butns a:hover::after {
+    width: 100%;
+}
+
+#mf {
+    width: 30vw;
+    margin-left: 15vw;
+    margin-top: 50vh;
+}
+
+#tf {
+    float: right;
+    margin-top: 22vh;
+    width: 30vw;
+}
+
+#sum1 {
+    float: right;
+    margin-top: 15vh;
+    margin-right: 40vw;
+    font-family: "Poiret One", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #1f1f1f;
+    font-size: 4vh;
+}
+
+#txt1 {
+    float: right;
+    margin-top: 25vh;
+    margin-right: -40vw;
+    width: 40vw;
+    font-family: "Poiret One", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #1f1f1f;
+    font-size: 3vh;
+    text-align: justify;
+}
+
+#ext1 {
+    float: right;
+    margin-top: 50vh;
+    margin-right: 7vw;
+    width: 35vw;
+    font-family: "Poiret One", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #1f1f1f;
+    font-size: 3vh;
+    text-align: justify;
+}
+
+#kj {
+    float: right;
+    margin-top: 10vh;
+    width: 35vw;
+    margin-right: 4vw;
+}
+
+#sum2 {
+    float: left;
+    margin-top: 16vh;
+    margin-left: 10vw;
+    font-family: "Poiret One", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #1f1f1f;
+    font-size: 4vh;
+}
+
+#txt2 {
+    float: left;
+    margin-left: 10vw;
+    margin-top: 2vh;
+    width: 36vw;
+    font-family: "Poiret One", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #1f1f1f;
+    font-size: 3vh;
+    text-align: justify;
+}
+
+#ext2 {
+    float: left;
+    margin-left: 10vw;
+    margin-top: 4vh;
+    font-family: "Poiret One", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #1f1f1f;
+    font-size: 3vh;
+}
+
+#ruze {
+    position: absolute;
+    left: 0;
+    margin-left: 4vw;
+    margin-top: 83vh;
+    width: 28vw;
+}
+
+#sum3 {
+    float: right;
+    margin-top: 16vh;
+    margin-right: 10vw;
+    font-family: "Poiret One", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #1f1f1f;
+    font-size: 4vh;
+}
+
+#txt3 {
+    float: right;
+    margin-right: -7vw;
+    margin-top: 25vh;
+    width: 36vw;
+    font-family: "Poiret One", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #1f1f1f;
+    font-size: 3vh;
+    text-align: justify;
+}
+
+#ext3 {
+    float: right;
+    margin-right: -36vw;
+    margin-top: 70vh;
+    width: 36vw;
+    font-family: "Poiret One", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #1f1f1f;
+    font-size: 3vh;
+    text-align: justify;
+}
+
+#uzunova {
+    width: 20vw;
+    margin-left: 23vw;
+    margin-top: 40vh;
+}
+
+/* Media Query for Phone Screens */
+@media (max-width: 768px) {
+    /* Header adjustments for mobile */
+    header {
+        height: auto; /* Allow header to adjust its height */
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column-reverse; /* Stack the title and buttons vertically */
+        align-items: center; /* Center content horizontally */
+        padding: 2vh 0;
+    }
+
+    #title {
+        font-size: 4vh;
+        margin-left: 0; /* Remove margin left to center it */
+        text-align: center; /* Center the title */
+        top: 0;
+        margin-top: 1vh;
+        position: absolute;
+
+    }
+
+    .butns {
+        margin-right: 0; /* Reset right margin to center the buttons */
+        gap: 2vw; /* Increase gap between buttons */
+        margin-top: 4vh; /* Adjust margin top for spacing */
+        justify-content: center; /* Center buttons */
+        width: 100%; /* Make the button container full width */
+    }
+
+    /* Stack elements vertically and adjust for mobile */
+    #mf,
+    #tf,
+    #kj,
+    #ruze,
+    #uzunova {
+        width: 80vw;
+        margin-left: 10vw;
+        margin-top: 2vh;
+    }
+
+    #mf{
+        margin-top: 15vh;
+        width: 60vw;
+        padding: 0;
+        margin-left: 0vw;
+    }
+
+    #tf{
+        margin-top: 25vh;
+        width: 80vw;
+    }
+
+    #sum1,
+    #sum2,
+    #sum3 {
+        font-size: 3vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 10vh;
+    }
+
+    #sum1{
+margin-top: 12vh;
+    }
+
+    #sum2{
+        margin-top: 4vh;
+    }
+
+    #sum3{
+        margin-top: 12vh;
+    }
+
+    #txt1,
+    #txt2,
+    #txt3,
+    #ext1,
+    #ext2,
+    #ext3 {
+        font-size: 2.5vh;
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 2vh;
+    }
+
+    .lander,
+    .hed1,
+    .hed2,
+    .hed3 {
+        width: 100vw;
+        height: auto; /* Use auto for all sections */
+        padding-bottom: 5vh;
+    }
+
+    .lander{
+        height: 92vh;
+        padding-bottom: 0;
+    }
+    
+    .hed1{
+        height: 130vh;
+    }
+
+    #prednaznachenie{
+        padding: 0;
+      
+    }
+
+  
+
+    /* Make sure hed2 has enough height */
+    .hed2 {
+        min-height: 120vh; /* Ensure this section is tall enough */
+        padding-bottom: 20vh; /* Additional space to push content down */
+    }
+
+    
+}
+
+
+
+
+
+
+
+@supports (-webkit-touch-callout: none) {
+    body {
+        -webkit-font-smoothing: antialiased; /* For Safari */
+        -moz-osx-font-smoothing: grayscale;  /* For macOS */
+        text-rendering: optimizeLegibility; /* Ensures better font rendering on Chrome and Safari */
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header {
+        display: -webkit-box; /* Safari support */
+        display: -ms-flexbox; /* IE support */
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .butns {
+        display: -webkit-box; /* Safari support */
+        display: -ms-flexbox; /* IE support */
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+    }
+    .lander {
+        height: auto; /* Use auto height to avoid viewport discrepancies */
+        min-height: 100vh; /* Use min-height to ensure it's tall enough */
+    }
+    img {
+        max-width: 100%; /* Make sure images scale down on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove inline gaps */
+    }
+                    
+}
